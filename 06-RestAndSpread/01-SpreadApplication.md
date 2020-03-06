@@ -65,11 +65,15 @@ const user = {
 
 ```js
 const lastName = prompt("Last name");
-// lastName이 입력되지 않으면 undefined 입력
+
 const user = {
     username: "nico",
     age: 24,
-    lastName: lastName !== "" ? lastName : undefined
+    ...(lastName !== "" && {lastName})
 };
-```
 
+console.log(user);
+```
+위와 같이 작성하면 `lastName`이 빈 문자열일 때, `lastName`이라는 프로퍼티가 아예 저장되지 않는다. 
+
+빈 문자열이 아니면 만들어둔 `lastName`이라는 변수가 `{lastName}` 에 들어가며 이는 `{lastName:lastName}` 와 같다.

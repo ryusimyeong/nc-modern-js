@@ -96,3 +96,10 @@ const name = (arg1, arg2) => {
     return arg1 + arg2;
 }
 ```
+```js
+/** 4) 만약 object 를 implicit return 해야 한다면 {}를 ()로 감싸야 한다. */
+const getName = () => { name: "sm" };
+getName(); // undefined;
+const getName = () => ({ name: "sm" });
+getName(); // {name: "sm"}
+```
