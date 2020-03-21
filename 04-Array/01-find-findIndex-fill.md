@@ -59,7 +59,7 @@ const friends = [
 ];
 friends.fill("*".repeat(5)); // 전부 "*"로 채운다.
 friends.fill("*".repeat(5, 1)); // index 1번부터 끝까지 "*"로 채운다.
-friends.fill("*".repeat(5), 1, 2); // index 1번만 "*"로 채운다.
+friends.fill("*".repeat(5, 1, 2); // index 1번만 "*"로 채운다.
 
 console.log(friends); // 4 출력
 ```
