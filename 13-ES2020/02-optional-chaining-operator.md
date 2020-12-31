@@ -21,7 +21,7 @@ const someone = {
 console.log(someone.profile.email); // Uncaught TypeError: Cannot read property 'email' of undefined 에러 발생
 ```
 
-someone에는 profile이라는 property가 없기 때문에 someone.profile.email을 출력하지 못하고 에러가 난다. 위 상황을 fix하기 위해선
+`someone`에는 `profile`이라는 `property`가 없기 때문에 `someone.profile.email`을 출력하지 못하고 에러가 난다. 위 상황을 fix하기 위해선
 
 ```js
 console.log(someone.profile && someone.profile.email); // undefined 출력
