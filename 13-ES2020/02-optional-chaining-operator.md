@@ -41,4 +41,4 @@ console.log(someone && someone.profile && someone.profile.email && someone.profi
 console.log(someone?.profile?.email?.domain);
 ```
 
-누가 봐도 깔끔하다. React나 Vue 프로젝트에서 API를 호출할 때 object가 아직 다 넘어오지 않은 상태의 에러 방지용으로 사용하면 좋을 거 같다.
+누가 봐도 깔끔하다. `React`나 `Vue` 프로젝트에서 API를 호출할 때 object가 아직 다 넘어오지 않은 상태의 에러 방지용으로 사용하면 좋을 거 같다.
