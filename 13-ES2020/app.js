@@ -1,11 +1,16 @@
-const obj = {
-  name: 'smsm',
-  age: 12
-}
+let array = [1, [2], [[3]], [[[4]]], [[[[5]]]]];
 
-const arr = [['good', 'person'], ['name','hihi'], ['age', 34]]
+console.log(array); // [1, [2], [[3]], [[[4]]], [[[[5]]]]];
 
-console.log(Object.fromEntries(arr))
+array = array.flat(1);
 
-console.log(Object.keys(obj));
-console.log(Object.values(obj));
+console.log(array); // [1, 2, [3], [[4]], [[[5]]]];
+
+array = array.flat(2);
+
+console.log(array); // [1, 2, 3, 4, [5]];
+
+array = array.flat(3);
+
+console.log(array); // [1, 2, 3, 4, 5];
+
